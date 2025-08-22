@@ -1,0 +1,371 @@
+{
+    "type": "Menu",
+    "title": {
+        "name": "『挖矿类』",
+        "size": 12,
+        "elevation": 3,
+        "background": "$menu_title_background_color",
+        "padding": [
+            5,
+            4,
+            5,
+            4
+        ],
+        "colors": [
+            "$menu_title_gradient_text_begin_color",
+            "$menu_title_gradient_text_end_color"
+        ]
+    },
+    "color": "$menu_color",
+    "alpha": 0.9,
+    "can_close": true,
+    "hide_fun": true,
+    "hide": true,
+    "items": [
+        {
+            "type": "TextView",
+            "name": "采矿",
+            "color": "$menu_item_color",
+            "size": 8,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "CookieBox",
+            "items": [
+                {
+                    "type": "Switch",
+                    "key": "LOCAL_RESPAWN",
+                    "name": "原地复活",
+                    "color": "$menu_item_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 10
+                },
+                {
+                    "type": "Switch",
+                    "key": "TP_MINER",
+                    "name": "传送采集",
+                    "color": "$menu_item_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "mine:ore|ancient_debris",
+                    "name": "[快捷]矿物",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "mine:chest|shulker_box",
+                    "name": "[快捷]箱子",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "mine:log",
+                    "name": "[快捷]木头",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "checked": true
+                },
+                {
+                    "type": "EditText",
+                    "key": "TP_MINER_LIST",
+                    "name": "采集列表",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "max_lines": 1,
+                    "text": "ore,log,chest,ancient_debris,shulker_box"
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "TP_MINER_CHEST",
+                    "name": "开箱模式",
+                    "color": "$menu_item_child_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 8
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "TP_MINER_C_DELAY",
+                    "format": "开箱延迟: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 20,
+                    "min": 1,
+                    "max": 40
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "TP_MINER_BYPASS",
+                    "name": "绕过检测",
+                    "color": "$menu_item_child_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "TP_MINER_HAND",
+                    "name": "手动挖矿",
+                    "color": "$menu_item_child_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "TP_MINER_INSTANT",
+                    "name": "手动秒挖",
+                    "color": "$menu_item_child_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 8
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "TP_MINER_RETRY",
+                    "format": "失败重试周期: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 20,
+                    "min": 1,
+                    "max": 60
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "TP_MINER_NEXT",
+                    "format": "传送延迟: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0,
+                    "min": 1,
+                    "max": 40
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "TP_MINER_MAX",
+                    "format": "手动挖掘阈值: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 200,
+                    "min": 1,
+                    "max": 400
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "TP_MINER_AUTO",
+                    "name": "自动工具",
+                    "color": "$menu_item_child_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "TP_MINER_ANTI",
+                    "name": "防卡墙",
+                    "color": "$menu_item_child_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 8
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "TP_MINER_RANGE",
+                    "format": "搜索范围: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 10,
+                    "min": 1,
+                    "max": 300
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "TP_MINER_SEARCH",
+                    "format": "搜索速度: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 60,
+                    "min": 1,
+                    "max": 100
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "TP_MINER_PICK",
+                    "format": "收集掉落物速度: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 5,
+                    "min": 1,
+                    "max": 20
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "TP_MINER_TIMEOUT",
+                    "format": "超时限制: %d秒",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 30,
+                    "min": 1,
+                    "max": 60
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "TP_MINER_OFFSET",
+                    "format": "收集范围偏移",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 5,
+                    "min": 1,
+                    "max": 20
+                },
+                {
+                    "type": "Switch",
+                    "key": "TP_MINER_REPEAT",
+                    "name": "循环搜索",
+                    "color": "$menu_item_child_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 8
+                },
+                {
+                    "type": "Switch",
+                    "key": "TP_MINER_TP",
+                    "name": "扫描完随机传送",
+                    "color": "$menu_item_child_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 8
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "TP_MINER_DELAY",
+                    "format": "搜索延迟: %dTick",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 60
+                }
+            ]
+        }
+    ],
+    "radius": 0
+}

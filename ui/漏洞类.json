@@ -1,0 +1,525 @@
+{
+    "type": "Menu",
+    "title": {
+        "name": "『漏洞类』",
+        "size": 12,
+        "elevation": 3,
+        "background": "$menu_title_background_color",
+        "padding": [
+            5,
+            4,
+            5,
+            4
+        ],
+        "colors": [
+            "$menu_title_gradient_text_begin_color",
+            "$menu_title_gradient_text_end_color"
+        ]
+    },
+    "color": "$menu_color",
+    "alpha": 0.9,
+    "can_close": true,
+    "hide_fun": true,
+    "hide": true,
+    "items": [
+        {
+            "type": "TextView",
+            "name": "漏洞",
+            "color": "$menu_item_color",
+            "size": 8,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "CookieBox",
+            "items": [
+                {
+                    "type": "Switch",
+                    "key": "ENCHANT_CRASHER",
+                    "name": "一键崩服",
+                    "color": "$menu_item_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 10
+                },
+                {
+                    "type": "Switch",
+                    "key": "MSG_BOOMER",
+                    "name": "聊天踢人",
+                    "color": "$menu_item_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 10
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "MSG_NUM",
+                    "format": "消息数量: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 20,
+                    "min": 1,
+                    "max": 100
+                },
+                {
+                    "type": "EditText",
+                    "key": "MSG_FAKE",
+                    "name": "伪造信息内容",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "max_lines": 1,
+                    "text": ""
+                },
+                {
+                    "type": "EditText",
+                    "key": "MSG_TEXT",
+                    "name": "刷屏消息内容",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "max_lines": 1,
+                    "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+                },
+                {
+                    "type": "TextView",
+                    "name": "黑名单设置",
+                    "color": "$menu_item_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "key": "MSG_WHITE"
+                },
+                {
+                    "type": "Switch",
+                    "key": "KILLAURA",
+                    "name": "超频杀戮",
+                    "color": "$menu_item_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 10
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "KILLAURA_COUNT",
+                    "format": "目标数量: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 10
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "KILLAURA_CPS",
+                    "format": "倍率: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 50,
+                    "min": 1,
+                    "max": 100
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "KILLAURA_SELF",
+                    "name": "攻击自己",
+                    "color": "$menu_item_child_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "KILLAURA_TARGET",
+                    "name": "攻击目标",
+                    "color": "$menu_item_child_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 8
+                },
+                {
+                    "type": "Switch",
+                    "key": "GLOBE_PACKET",
+                    "name": "全图攻击",
+                    "color": "$menu_item_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 10
+                },
+                {
+                    "type": "TextView",
+                    "name": "白名单设置",
+                    "color": "$menu_item_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "key": "GLOBE_SET"
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "GLOBE_EXCLUDE",
+                    "name": "排除自己",
+                    "color": "$menu_item_child_color",
+                    "checked": true,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 8
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "GLOBE_DELAY",
+                    "format": "延迟: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 5,
+                    "min": 1,
+                    "max": 40
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "GLOBE_ATTACK",
+                    "name": "百米",
+                    "color": "$menu_item_child_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "GLOBE_SHADOW",
+                    "name": "虚影",
+                    "color": "$menu_item_child_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 8
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "GLOBE_SHADOW_RANGE",
+                    "format": "虚影大小: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 3,
+                    "min": 1,
+                    "max": 9
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "GLOBE_SHADOW_OFFSET",
+                    "format": "高度偏移: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 2,
+                    "min": -5,
+                    "max": 5
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "GLOBE_SOUND",
+                    "name": "音频爆破",
+                    "color": "$menu_item_child_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 8
+                },
+                {
+                    "type": "EditText",
+                    "key": "GLOBE_SOUND_ID",
+                    "name": "音频ID",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "max_lines": 1,
+                    "text": "0"
+                },
+                {
+                    "type": "Switch",
+                    "key": "KICKAURA",
+                    "name": "全体踢人",
+                    "color": "$menu_item_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 10
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "KICKAURA_RATE",
+                    "format": "踢人程度: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 10,
+                    "min": 1,
+                    "max": 100
+                },
+                {
+                    "type": "Switch",
+                    "key": "CRASHER_AUTH",
+                    "name": "发包卡服",
+                    "color": "$menu_item_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 10
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "CRASHER_AUTH_RATE",
+                    "format": "卡服程度: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 10,
+                    "min": 1,
+                    "max": 100
+                },
+                {
+                    "type": "Switch",
+                    "key": "CRASHER",
+                    "name": "静默卡服",
+                    "color": "$menu_item_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 10
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "CRASHER_RATE",
+                    "format": "卡服程度: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 10,
+                    "min": 1,
+                    "max": 100
+                },
+                {
+                    "type": "Switch",
+                    "key": "CRASHER_NEW",
+                    "name": "暴力卡服",
+                    "color": "$menu_item_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 10
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "CRASHER__NEW_RATE",
+                    "format": "卡服程度: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 10,
+                    "min": 1,
+                    "max": 100
+                },
+                {
+                    "type": "TextView",
+                    "name": "获取全服玩家坐标",
+                    "color": "$menu_item_color",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "key": "GET_POS"
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "GET_POS_SAVE",
+                    "name": "自动保存",
+                    "color": "$menu_item_child_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 8
+                },
+                {
+                    "type": "TextView",
+                    "name": "租赁服秒传",
+                    "color": "$menu_item_color",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "key": "SERVER_TP"
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "SERVER_TP_tp",
+                    "name": "自动传送",
+                    "color": "$menu_item_child_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "checked": true,
+                    "size": 8
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "SERVER_TP_offset",
+                    "format": "高度偏移: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 2,
+                    "min": -10,
+                    "max": 10
+                }
+            ]
+        }
+    ],
+    "radius": 0
+}

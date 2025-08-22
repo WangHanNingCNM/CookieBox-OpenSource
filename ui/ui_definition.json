@@ -1,0 +1,15 @@
+{
+    "name": "CookieBox",
+    "ui": [
+        "CookieBox/挖矿类",
+        "CookieBox/漏洞类",
+        "CookieBox/主菜单",
+        "CookieBox/辅助类",
+        "CookieBox/制裁之刃类",
+        "CookieBox/建筑工具类"
+    ],
+    "fun": [
+        "CookieBox"
+    ],
+    "script": []
+}

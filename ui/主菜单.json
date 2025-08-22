@@ -1,0 +1,131 @@
+{
+    "type": "Menu",
+    "title": {
+        "name": "『CookieBox』",
+        "size": 12,
+        "elevation": 3,
+        "background": "$menu_title_background_color",
+        "padding": [
+            5,
+            4,
+            5,
+            4
+        ],
+        "colors": [
+            "$menu_title_gradient_text_begin_color",
+            "$menu_title_gradient_text_end_color"
+        ]
+    },
+    "color": "$menu_color",
+    "alpha": 0.9,
+    "can_close": true,
+    "hide_fun": true,
+    "hide": true,
+    "items": [
+        {
+            "type": "TextView",
+            "name": "加载脚本",
+            "color": "$menu_item_color",
+            "size": 12,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "load_script": "CookieBox.js"
+        },
+        {
+            "type": "TextView",
+            "name": "退出脚本",
+            "color": "$menu_item_color",
+            "size": 12,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "run_command": "/exit"
+        },
+        {
+            "type": "GradientTextView",
+            "name": "━━━━",
+            "start_color": "#00BFFF",
+            "end_color": "#8A2BE2",
+            "size": 12,
+            "padding": [
+                0,
+                -4,
+                0,
+                -4
+            ]
+        },
+        {
+            "type": "TextView",
+            "name": "> 漏洞模块",
+            "color": "$menu_item_color",
+            "size": 12,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "CookieBox/漏洞类"
+        },
+        {
+            "type": "TextView",
+            "name": "> 建筑模块",
+            "color": "$menu_item_color",
+            "size": 12,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "CookieBox/建筑工具类"
+        },
+        {
+            "type": "TextView",
+            "name": "> 辅助模块",
+            "color": "$menu_item_color",
+            "size": 12,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "CookieBox/辅助类"
+        },
+        {
+            "type": "TextView",
+            "name": "> 制裁模块",
+            "color": "$menu_item_color",
+            "size": 12,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "CookieBox/制裁之刃类"
+        },
+        {
+            "type": "TextView",
+            "name": "> 采矿模块",
+            "color": "$menu_item_color",
+            "size": 12,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "CookieBox/挖矿类"
+        }
+    ],
+    "radius": 0
+}

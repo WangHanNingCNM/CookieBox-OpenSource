@@ -1,0 +1,848 @@
+{
+    "type": "Menu",
+    "title": {
+        "name": "『辅助类』",
+        "size": 12,
+        "elevation": 3,
+        "background": "$menu_title_background_color",
+        "padding": [
+            5,
+            4,
+            5,
+            4
+        ],
+        "colors": [
+            "$menu_title_gradient_text_begin_color",
+            "$menu_title_gradient_text_end_color"
+        ]
+    },
+    "color": "$menu_color",
+    "alpha": 0.9,
+    "can_close": true,
+    "hide_fun": true,
+    "hide": true,
+    "items": [
+        {
+            "type": "TextView",
+            "name": "辅助",
+            "color": "$menu_item_color",
+            "size": 8,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "CookieBox",
+            "items": [
+                {
+                    "type": "TextView",
+                    "name": "保存快捷栏",
+                    "color": "$menu_item_color",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "key": "SAVE_HOTBAR"
+                },
+                {
+                    "type": "TextView",
+                    "name": "加载快捷栏",
+                    "color": "$menu_item_color",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "key": "LOAD_HOTBAR"
+                },
+                {
+                    "type": "Switch",
+                    "key": "CLICKDESTROY",
+                    "name": "点击秒挖",
+                    "color": "$menu_item_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 10
+                },
+                {
+                    "type": "Switch",
+                    "key": "GET_COMMAND",
+                    "name": "获取命令方块",
+                    "color": "$menu_item_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 10
+                },
+                {
+                    "type": "Switch",
+                    "key": "CHAT_MANAGER",
+                    "name": "消息拦截",
+                    "color": "$menu_item_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "CHAT_MANAGER_TIP",
+                    "name": "拦截提示",
+                    "color": "$menu_item_child_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 8
+                },
+                {
+                    "type": "EditText",
+                    "key": "CHAT_MANAGER_KEYWORD",
+                    "name": "关键词",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "max_lines": 1,
+                    "text": "fvv,L"
+                },
+                {
+                    "type": "Switch",
+                    "key": "ENTER_TEXT",
+                    "name": "进服发言",
+                    "color": "$menu_item_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 10
+                },
+                {
+                    "type": "EditText",
+                    "key": "ENTER_TEXT_CONTENT",
+                    "name": "消息内容",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "max_lines": 1,
+                    "text": "CookieBox入侵服务器"
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "ENTER_TEXT_TIMES",
+                    "format": "发言条数: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 3,
+                    "min": 1,
+                    "max": 20
+                },
+                {
+                    "type": "Switch",
+                    "key": "AUTOBACK",
+                    "name": "残血回城",
+                    "color": "$menu_item_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 10
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "BACK_MIN",
+                    "format": "最少血量: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 5,
+                    "min": 1,
+                    "max": 40
+                },
+                {
+                    "type": "TextView",
+                    "name": "设置主城坐标",
+                    "color": "$menu_item_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "key": "BACK_SET"
+                },
+                {
+                    "type": "Switch",
+                    "key": "ANTITEXT",
+                    "name": "屏蔽消息",
+                    "color": "$menu_item_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 10
+                },
+                {
+                    "type": "Switch",
+                    "key": "CRITICAL",
+                    "name": "刀刀暴击[重锤重击]",
+                    "color": "$menu_item_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 10
+                },
+                {
+                    "type": "Switch",
+                    "key": "SPAMMER",
+                    "name": "聊天刷屏",
+                    "color": "$menu_item_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 10
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "SPAMMER_NUM",
+                    "format": "消息数量: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 100
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "SPAMMER_FAKE",
+                    "name": "伪造聊天",
+                    "color": "$menu_item_child_color",
+                    "checked": true,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 8
+                },
+                {
+                    "type": "EditText",
+                    "key": "SPAMMER_FAKE_TEXT",
+                    "name": "伪造信息内容",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "max_lines": 1,
+                    "text": ""
+                },
+                {
+                    "type": "EditText",
+                    "key": "SPAMMER_TEXT",
+                    "name": "刷屏消息内容",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "max_lines": 1,
+                    "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+                },
+                {
+                    "type": "Switch",
+                    "key": "INFINITE_AURA",
+                    "name": "百米大刀",
+                    "color": "$menu_item_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 10
+                },
+                {
+                    "type": "TextView",
+                    "name": "白名单设置",
+                    "color": "$menu_item_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "key": "INFINITE_SET"
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "INFINITE_COUNT",
+                    "format": "目标数量: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 3,
+                    "min": 1,
+                    "max": 10
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "INFINITE_CPS",
+                    "format": "CPS: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 3,
+                    "min": 1,
+                    "max": 20
+                },
+                {
+                    "type": "Switch",
+                    "key": "AUTO_DESTROY",
+                    "name": "自动破坏",
+                    "color": "$menu_item_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "AUTO_DESTROY_EXCLUDE",
+                    "name": "排除脚下",
+                    "color": "$menu_item_child_color",
+                    "checked": true,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "AUTO_DESTROY_IGNORE",
+                    "name": "屏蔽掉落物",
+                    "color": "$menu_item_child_color",
+                    "checked": true,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 8
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "AUTO_DESTROY_DELAY",
+                    "format": "延迟: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 10,
+                    "min": 1,
+                    "max": 40
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "AUTO_DESTROY_RANGE",
+                    "format": "范围: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 3,
+                    "min": 1,
+                    "max": 9
+                },
+                {
+                    "type": "TextView",
+                    "name": "结构扫描",
+                    "color": "$menu_item_color",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "key": "STRUCTURE_SCAN"
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "STRUCTURE_SCAN_RANGE",
+                    "format": "范围: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 3,
+                    "min": 1,
+                    "max": 10
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "STRUCTURE_SCAN_OFFSET",
+                    "format": "间隔: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 100,
+                    "min": 10,
+                    "max": 500
+                },
+                {
+                    "type": "EditText",
+                    "key": "STRUCTURE_LIST",
+                    "name": "结构列表",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "max_lines": 1,
+                    "text": "village"
+                },
+                {
+                    "type": "Switch",
+                    "key": "BREAK_SHIELD",
+                    "name": "一键破盾",
+                    "color": "$menu_item_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 10
+                },
+                {
+                    "type": "Switch",
+                    "key": "SHOW_CHUNK",
+                    "name": "区块显示",
+                    "color": "$menu_item_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 10
+                },
+                {
+                    "type": "Switch",
+                    "key": "FAKE_IRC",
+                    "name": "伪造跑路聊天室",
+                    "color": "$menu_item_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 10
+                },
+                {
+                    "type": "Switch",
+                    "key": "AUTO_TAXI",
+                    "name": "滴滴打车",
+                    "color": "$menu_item_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 10
+                },
+                {
+                    "type": "EditText",
+                    "key": "TAXI_GOAL",
+                    "name": "目的地",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "max_lines": 1,
+                    "text": "",
+                    "hint": "以逗号分割的坐标 如 0,0,0"
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "TAXI_SPEED",
+                    "format": "速度: %d格/秒",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 5,
+                    "min": 1,
+                    "max": 50
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "TAXI_HEIGHT",
+                    "format": "飞行高度: %d格",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 340,
+                    "min": -60,
+                    "max": 500
+                },
+                {
+                    "type": "Switch",
+                    "key": "EXEC_CMD",
+                    "name": "指令执行器",
+                    "color": "$menu_item_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 10
+                },
+                {
+                    "type": "EditText",
+                    "key": "EXEC_CMD_LIST",
+                    "name": "指令列表",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "text": "",
+                    "hint": "换行分割指令"
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "EXEC_CMD_DELAY",
+                    "format": "延迟: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 10,
+                    "min": 1,
+                    "max": 80
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "EXEC_CMD_TIMES",
+                    "format": "执行次数: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 10
+                },
+                {
+                    "type": "Switch",
+                    "key": "AUTO_CONNECT",
+                    "name": "自动重连",
+                    "color": "$menu_item_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 10
+                },
+                {
+                    "type": "EditText",
+                    "key": "AUTO_CONNECT_ADDR",
+                    "name": "服务器IP",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "max_lines": 1,
+                    "text": "",
+                    "hint": "'IP:端口' 或 'IP 端口' 格式都可以"
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "AUTO_CONNECT_DELAY",
+                    "format": "超时时间: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 40,
+                    "min": 1,
+                    "max": 80
+                },
+                {
+                    "type": "Switch",
+                    "key": "GODMODE",
+                    "name": "上帝模式",
+                    "color": "$menu_item_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 10
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "GODMODE_Y",
+                    "format": "高度设置: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": -70,
+                    "min": -70,
+                    "max": 100000
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "GODMODE_INTERACT",
+                    "name": "交互加强",
+                    "color": "$menu_item_child_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "GODMODE_RAND",
+                    "name": "随机高度",
+                    "color": "$menu_item_child_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 8
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "GODMODE_RANGE",
+                    "format": "传送范围: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1000,
+                    "min": 1,
+                    "max": 100000
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "GODMODE_FRE",
+                    "format": "发包数量: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 3,
+                    "min": 1,
+                    "max": 10
+                },
+                {
+                    "type": "Switch",
+                    "key": "INFINITE_PICK",
+                    "name": "百米拾取",
+                    "color": "$menu_item_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 10
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "INFINITE_PICK_MAX",
+                    "format": "拾取数量: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 5,
+                    "min": 1,
+                    "max": 10
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "INFINITE_PICK_RANGE",
+                    "format": "范围: %d格",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 200,
+                    "min": 100,
+                    "max": 500
+                }
+            ]
+        }
+    ],
+    "radius": 0
+}

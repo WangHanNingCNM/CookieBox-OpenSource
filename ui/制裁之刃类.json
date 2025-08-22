@@ -1,0 +1,181 @@
+{
+    "type": "Menu",
+    "title": {
+        "name": "『制裁之刃类』",
+        "size": 12,
+        "elevation": 3,
+        "background": "$menu_title_background_color",
+        "padding": [
+            5,
+            4,
+            5,
+            4
+        ],
+        "colors": [
+            "$menu_title_gradient_text_begin_color",
+            "$menu_title_gradient_text_end_color"
+        ]
+    },
+    "color": "$menu_color",
+    "alpha": 0.9,
+    "can_close": true,
+    "hide_fun": true,
+    "hide": true,
+    "items": [
+        {
+            "type": "TextView",
+            "name": "制裁之刃",
+            "color": "$menu_item_color",
+            "size": 8,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "CookieBox",
+            "items": [
+                {
+                    "type": "TextView",
+                    "key": "OP_CLEAR",
+                    "name": "清除炸服痕迹",
+                    "color": "$$menu_item_color",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "OP_SWITCH",
+                    "name": "开关",
+                    "color": "$menu_item_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "OP_BOOST",
+                    "name": "展示效果增强",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "OP_CRASH",
+                    "name": "卡死服务器",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "OP_DELAY",
+                    "format": "爆破延迟: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 2,
+                    "min": 1,
+                    "max": 20
+                },
+                {
+                    "type": "Switch",
+                    "key": "OP_CUSTOM",
+                    "name": "自定义模式",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "EditText",
+                    "key": "OP_CONTENT",
+                    "name": "刷屏内容",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "max_lines": 1,
+                    "hint": "刷屏内容"
+                },
+                {
+                    "type": "EditText",
+                    "key": "OP_TITLE",
+                    "name": "标题内容",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "max_lines": 1,
+                    "hint": "标题内容"
+                },
+                {
+                    "type": "EditText",
+                    "key": "OP_SCORE",
+                    "name": "计分板内容",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "max_lines": 1,
+                    "hint": "计分板内容"
+                },
+                {
+                    "type": "TextView",
+                    "key": "OP_EXIT",
+                    "name": "秒退游戏",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                }
+            ]
+        }
+    ],
+    "radius": 0
+}
