@@ -1,0 +1,113 @@
+{
+    "type": "Menu",
+    "title": {
+        "name": "『建筑工具类』",
+        "size": 12,
+        "elevation": 3,
+        "background": "$menu_title_background_color",
+        "padding": [
+            5,
+            4,
+            5,
+            4
+        ],
+        "colors": [
+            "$menu_title_gradient_text_begin_color",
+            "$menu_title_gradient_text_end_color"
+        ]
+    },
+    "color": "$menu_color",
+    "alpha": 0.9,
+    "can_close": true,
+    "hide_fun": true,
+    "hide": true,
+    "items": [
+        {
+            "type": "TextView",
+            "name": "建筑工具",
+            "color": "$menu_item_color",
+            "size": 8,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "CookieBox",
+            "items": [
+                {
+                    "type": "TextView",
+                    "name": "导入建筑",
+                    "color": "$menu_item_color",
+                    "size": 12,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "key": "IMPORT_BUILD"
+                },
+                {
+                    "type": "Switch",
+                    "key": "EXPORT_POS",
+                    "name": "点击导出",
+                    "color": "$menu_item_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 10
+                },
+                {
+                    "type": "Switch",
+                    "key": "IMPORT_POS",
+                    "name": "设置导入坐标",
+                    "color": "$menu_item_color",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "size": 10
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "IMPORT_DELAY",
+                    "format": "导入延迟: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 40
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "IMPORT_SPEED",
+                    "format": "导入速度: %d",
+                    "color": "$menu_item_child_color",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 20,
+                    "min": 1,
+                    "max": 100
+                }
+            ]
+        }
+    ],
+    "radius": 0
+}
